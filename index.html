@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi primera página</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe0ec, #e5dcff);
+      color: #613b58;
+      text-align: center;
+    }.tarjeta {
+  background: white;
+  margin: 20px;
+  padding: 35px 25px;
+  border-radius: 25px;
+  box-shadow: 0 8px 30px #b58ca655;
+  max-width: 320px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p {
+  line-height: 1.7;
+}
+
+button {
+  background: #e879a9;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#mensaje {
+  display: none;
+  margin-top: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="tarjeta">
+    <h1>♡ Mi pequeño rincón ♡</h1>
+    <p>Hay momentos sencillos que se convierten en recuerdos especiales.</p>
+    <button onclick="mostrarMensaje()">Pulsa aquí 💗</button>
+    <p id="mensaje">¡Gracias por visitar mi página! ✨</p>
+  </div>  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").style.display = "block";
+    }
+  </script></body>
+</html>
